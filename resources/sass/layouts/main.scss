@@ -1,0 +1,120 @@
+.signup {
+    margin-top: 50px;
+}
+.signup-content {
+    @extend display-flex;
+    padding: 75px 0;
+    // flex-flow: wrap;
+}
+.signup-form, .signup-image, .signin-form, .signin-image{
+    width: 50%;
+}
+.signup-image {
+    margin: 0 55px;
+}
+.form-title {
+    margin-bottom: 33px;
+}
+.signup-image {
+    margin-top: 45px;
+}
+figure {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.form-submit {
+    display: inline-block;
+    background: $blue-color;
+    color: #fff;
+    border-color: $blue-color;
+    border-bottom: none;
+    width: auto;
+    margin-top: 25px;
+    cursor: pointer;
+    &:hover {
+        background: darken($blue-color, 10%);
+    }
+}
+
+#signin {
+    margin-top: 16px;
+}
+.signup-image-link {
+    font-size: 14px;
+    color: $black-color;
+    display: block;
+    text-align: center;
+}
+
+.term-service {
+    font-size: 13px;
+    color: $black-color;
+}
+.signup-form {
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-left: 34px;
+}
+.register-form {
+    width: 100%;
+}
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+    overflow: hidden;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid $grey-light;
+    padding: 6px 30px;
+    font-family: Poppins;
+    box-sizing: border-box;
+    @include input-placeholder($grey-light);
+    &:focus {
+        border-bottom: 1px solid $black-color;
+        @include input-placeholder($black-color);
+    }
+}
+
+input[type=checkbox]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  display: none;
+}
+.agree-term {
+    display: inline-block;
+    width: auto;
+}
+
+.material-icons-name {
+    font-size: 18px;
+}
+
+
+// Login
+.sign-in {
+    margin-top: 50px;
+}
+.signin-content {
+    @extend display-flex;
+    padding-top: 67px;
+    padding-bottom: 87px;
+    // padding: 67px 0;
+}
+.signin-form {
+    margin-right: 90px;
+    margin-left: 80px;
+}
+.signin-image {
+    margin-left: 110px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
